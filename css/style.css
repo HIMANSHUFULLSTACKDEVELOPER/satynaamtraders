@@ -8353,47 +8353,106 @@ h1, h2, h3, h4, h5,
       border: 1px solid #c49b63; }
 
 #ftco-testimony {
-  padding-bottom: 0;
+  padding: 4em 0;
   position: relative;
-  z-index: 0; }
-  @media (max-width: 1199.98px) {
-    #ftco-testimony.img {
-      background-position: center center !important; } }
-  #ftco-testimony > .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #000;
-    opacity: .5; }
+  z-index: 0;
+  background: #f9f9f9;
+}
+
+#ftco-testimony > .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.4;
+}
+
+.testimony-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+  position: relative;
+  z-index: 1;
+}
 
 .testimony {
   background: #c49b63;
-  padding: 2em;
-  color: #fff; }
-  .testimony.overlay {
-    position: relative;
-    z-index: 0; }
-    .testimony.overlay:after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      content: '';
-      background: #000;
-      opacity: .1;
-      z-index: -1; }
-  .testimony .author .image {
-    width: 40px; }
-    .testimony .author .image img {
-      border-radius: 50%;
-      max-width: 100%; }
-  .testimony .author .position {
-    display: block;
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.6); }
+  padding: 2.5em;
+  border-color: #c49b63;;
+  border-radius: 12px;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.5em;
+  min-height: 300px; /* ensures equal height */
+}
+
+.testimony:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.testimony.overlay:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  background: #000;
+  opacity: 0.05;
+  border-radius: 12px;
+  z-index: -1;
+}
+
+.testimony p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 1.5em;
+  flex-grow: 1;
+}
+
+.testimony .author {
+  display: flex;
+  align-items: center;
+}
+
+.testimony .author .image {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 1em;
+  border: 2px solid #fff;
+  flex-shrink: 0;
+}
+
+.testimony .author .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimony .author .name {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.testimony .author .position {
+  display: block;
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.testimony-wrapper {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
 
 .ftco-social a {
   width: 30px;
@@ -8509,6 +8568,9 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   padding: 7em 0;
+ /* border-top: 1px solid #333; */
+  /* padding-top: 1.5em; */
+  color:#1e7e34;
   background: #120f0f; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
@@ -8614,7 +8676,7 @@ textarea.form-control {
     margin-bottom: 0;
     font-family: "Great Vibes", cursive;
     color: #c49b63;
-    line-height: 1;
+    /* line-height: 1; */
     margin-bottom: -21px;
     z-index: 1; }
   .heading-section h2 {
@@ -9333,7 +9395,48 @@ textarea.form-control {
 
     .gallery-img {
   width: 100%;
-  height: 350px;
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 0.85em;
+  border-top: 2px solid #333;
+  padding-top: 1.5em;
+  color: #888;
+}
+
+/* .footer-line{
+  text-align: center;
+  margin-top: 2em;
+  font-size: 0.85em;
+  border-top: 2px solid #333;
+  padding-top: 1.5em;
+  color: #888;
+} */
+
+.translate-btn {
+  background-color: #c49b63;
+  border: none;
+  color: #fff;
+  padding: 0.5em 1.2em;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.translate-btn:hover {
+  background-color: #a57d4f;
+  transform: scale(1.05);
+}
+
+/* Hide Google Translate top bar */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0 !important;
 }
