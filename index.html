@@ -5,8 +5,8 @@
 	<title>🥜 Satynaam Traders</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <!-- Favicon -->
-    <link href="./images/logo.png" rel="icon" />
+	<!-- Favicon -->
+	<link href="./images/logo.png" rel="icon" />
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
@@ -31,7 +31,36 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
+	<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+  }
+
+  // Toggle sequence: EN → HI → MR → EN ...
+  var languages = ['hi', 'mr', 'en'];
+  var currentLangIndex = 0;
+
+  window.onload = function() {
+    var btn = document.getElementById('translate-button');
+    btn.addEventListener('click', function() {
+      var select = document.querySelector('.goog-te-combo');
+      if (select) {
+        currentLangIndex = (currentLangIndex + 1) % languages.length;
+        var lang = languages[currentLangIndex];
+        select.value = lang;
+        select.dispatchEvent(new Event('change'));
+      }
+    });
+  };
+</script>
+
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
 <body>
+	<div id="google_translate_element" style="display:none;"></div>
+
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.html"> 🥜 Satynaam <small> Traders</small></a>
@@ -46,19 +75,21 @@
 					<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
 					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
 					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-					
+
 					<li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-					
+
 				</ul>
+				<button id="translate-button" class="translate-btn">Translate to Hindi</button>
+
 			</div>
 		</div>
 	</nav>
 	<!-- END nav -->
-<!-- home section -->
+	<!-- home section -->
 	<section class="home-slider owl-carousel" id="home">
 		<div class="slider-item"
-			style="background-image: url(https://5.imimg.com/data5/OS/GL/KR/SELLER-21954464/peanut-varieties-500x500.PNG);">
+			style="background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230426/pngtree-peanuts-on-a-table-with-dark-background-image_2522255.jpg);">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
@@ -85,179 +116,179 @@
 		</div>
 
 		<div class="slider-item"
-			style="background-image: url(https://images.healthshots.com/healthshots/en/uploads/2023/12/14204117/peanuts-1.jpg);">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-					<a href="#mor">
-					<div class="col-md-8 col-sm-12 text-center ftco-animate">
-						<span class="subheading">Quality Peanuts</span>
-						<h1 class="mb-4">Peanut Rich In Fibre</h1>
-						<p class="mb-4 mb-md-5">Raw Peanuts Are Also An Excellent Source Of Dietary Fiber.</p></a>
-						<p><a href="#productss" class="btn btn-primary p-3 px-xl-4 py-xl-3">Products</a> <a href="#mor"
-								class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Click Me</a></p>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="slider-item"
-			style="background-image: url(https://aradbranding.com/en/wp-content/uploads/2022/08/1612643705_thbt-e1660628601787.jpg);">
+			style="background-image: url(https://static.vecteezy.com/system/resources/thumbnails/042/065/563/small_2x/ai-generated-organic-peanuts-on-blurred-background-copy-space-for-food-market-or-recipe-blog-banner-photo.jpeg);">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 					<a href="#mor">
 						<div class="col-md-8 col-sm-12 text-center ftco-animate">
-							<span class="subheading">Best Peanut and Nut sale</span>
-							<h1 class="mb-4">Peanuts Are A Healthy Treat That Is High In Protein, Fiber, And
-								Heart-Healthy
-								Nutrients.</h1>
-							<p class="mb-4 mb-md-5"></p></a>
-							<p><a href="#productss" class="btn btn-primary p-3 px-xl-4 py-xl-3">Products</a> <a href="#mor"
-								class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Click Me</a></p>
+							<span class="subheading">Quality Peanuts</span>
+							<h1 class="mb-4">Peanut Rich In Fibre</h1>
+							<p class="mb-4 mb-md-5">Raw Peanuts Are Also An Excellent Source Of Dietary Fiber.</p>
+					</a>
+					<p><a href="#productss" class="btn btn-primary p-3 px-xl-4 py-xl-3">Products</a> <a href="#mor"
+							class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Click Me</a></p>
+				</div>
+
+			</div>
+		</div>
+		</div>
+
+		<div class="slider-item"
+			style="background-image: url(https://media.istockphoto.com/id/957920486/photo/raw-peanuts-in-white-bowl-and-peanut-shell-on-wooden-table.jpg?s=170667a&w=0&k=20&c=X3lb3Oo9Y-vgd8asuC_8O6BE3B-1Btu43F-NaLLlwdg=);">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+					<a href="#mor">
+						<div class="col-md-8 col-sm-12 text-center ftco-animate">
+							<span class="subheading">Quality Peanuts</span>
+							<h1 class="mb-4">Best Peanut and Nut sale</h1>
+							<p class="mb-4 mb-md-5">Peanuts: rich in protein, fiber, and heart-healthy nutrients</p>
+					</a>
+					<p><a href="#productss" class="btn btn-primary p-3 px-xl-4 py-xl-3">Products</a> <a href="#mor"
+							class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Click Me</a></p>
+				</div>
+
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- addresses -->
+	<section class="ftco-intro">
+		<div class="container-wrap">
+			<div class="wrap d-md-flex align-items-xl-end">
+				<div class="info">
+					<div class="row no-gutters">
+
+						<!-- Phone Link -->
+						<div class="col-md-4 d-flex ftco-animate">
+							<div class="icon"><span class="icon-phone"></span></div>
+							<div class="text">
+								<h3>
+									<a href="tel:+918788209773" style="color: inherit; text-decoration: none;">
+										+91 87882 09773
+									</a>
+								</h3>
+								<p>Peanuts: the humble snack with a superfood punch.</p>
+							</div>
 						</div>
 
+						<!-- Location Link (Google Maps) -->
+						<div class="col-md-4 d-flex ftco-animate">
+							<div class="icon"><span class="icon-my_location"></span></div>
+							<div class="text">
+								<h3>
+									<a href="https://www.google.com/maps/place/Satynaam+traders+industry/@21.3436875,78.4775625,17z/data=!3m1!4b1!4m6!3m5!1s0x3bd451005f264f85:0xc37c8b5513169c7e!8m2!3d21.3436875!4d78.4775625!16s%2Fg%2F11lf77hz7s?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
+										target="_blank" style="color: inherit; text-decoration: none;">
+										Rohana, Bus Stand
+									</a>
+								</h3>
+								<p>Maharashtra 441305, India</p>
+							</div>
+						</div>
+
+						<!-- Operating Hours (optional link if needed) -->
+						<div class="col-md-4 d-flex ftco-animate">
+							<div class="icon"><span class="icon-clock-o"></span></div>
+							<div class="text">
+								<h3>Open Monday-Friday</h3>
+								<p>8:00am - 9:00pm</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Peanut Info Box -->
+				<div class="book p-4">
+					<h3>Fresh Peanuts</h3>
+					<form action="#" class="appointment-form">
+						<div class="d-md-flex">
+							<p style="color: white;">
+								🥜Freshness<br>
+								🥜Cleanliness<br>
+								🥜Crunchiness<br>
+								🥜No Mold or Moisture
+							</p>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
 	</section>
-<!-- addresses -->
-<section class="ftco-intro">
-  <div class="container-wrap">
-    <div class="wrap d-md-flex align-items-xl-end">
-      <div class="info">
-        <div class="row no-gutters">
 
-          <!-- Phone Link -->
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="icon"><span class="icon-phone"></span></div>
-            <div class="text">
-              <h3>
-                <a href="tel:+918788209773" style="color: inherit; text-decoration: none;">
-                  +91 87882 09773
-                </a>
-              </h3>
-              <p>Peanuts: the humble snack with a superfood punch.</p>
-            </div>
-          </div>
-
-          <!-- Location Link (Google Maps) -->
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="icon"><span class="icon-my_location"></span></div>
-            <div class="text">
-              <h3>
-                <a href="https://www.google.com/maps/place/Satynaam+traders+industry/@21.3436875,78.4775625,17z/data=!3m1!4b1!4m6!3m5!1s0x3bd451005f264f85:0xc37c8b5513169c7e!8m2!3d21.3436875!4d78.4775625!16s%2Fg%2F11lf77hz7s?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" 
-                   target="_blank" style="color: inherit; text-decoration: none;">
-                  Rohana, Bus Stand
-                </a>
-              </h3>
-              <p>Maharashtra 441305, India</p>
-            </div>
-          </div>
-
-          <!-- Operating Hours (optional link if needed) -->
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="icon"><span class="icon-clock-o"></span></div>
-            <div class="text">
-              <h3>Open Monday-Friday</h3>
-              <p>8:00am - 9:00pm</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Peanut Info Box -->
-      <div class="book p-4">
-        <h3>Fresh Peanuts</h3>
-        <form action="#" class="appointment-form">
-          <div class="d-md-flex">
-            <p style="color: white;">
-              🥜Freshness<br>
-              🥜Cleanliness<br>
-              🥜Crunchiness<br>
-              🥜No Mold or Moisture
-            </p>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- discover section -->
+	<!-- discover section -->
 
 	<section class="ftco-section" id="mor">
-	<div  class="container">
-		<div class="row justify-content-center mb-5 pb-3" >
-			<div class="col-md-7 heading-section ftco-animate text-center">
-				<span class="subheading">Discover</span>
-				<h2 class="mb-4">Best Peanuts Sellers</h2>
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-					live the blind texts.</p>
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<span class="subheading">Discover</span>
+					<h2 class="mb-4">Best Peanuts Sellers</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+						live the blind texts.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="menu-entry">
+						<a href="#" class="img"
+							style="background-image: url(https://static.vecteezy.com/system/resources/previews/004/156/176/non_2x/peanuts-on-white-background-photo.jpg);"></a>
+						<div class="text text-center pt-4">
+							<h3><a href="#">White Peanuts</a></h3>
+							<p>Blanched or skinned peanuts</p>
+							<p class="price"><span> ₹3,500 / 50 kg</span></p>
+							<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary"
+									onclick="showConfirmation(event)">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="menu-entry">
+						<a href="#" class="img"
+							style="background-image: url(https://previews.123rf.com/images/eak/eak1210/eak121000022/15881177-peanut-on-white-background.jpg);"></a>
+						<div class="text text-center pt-4">
+							<h3><a href="#">Red Skin Peanuts</a></h3>
+							<p>Regular raw peanuts with skin</p>
+							<p class="price"><span> ₹5,000 / 50 kg</span></p>
+							<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary"
+									onclick="showConfirmation(event)">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="menu-entry">
+						<a href="#" class="img"
+							style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpkvKwxaUsgMCSw5marxGQLbfj1weVcxD9IA&s);"></a>
+						<div class="text text-center pt-4">
+							<h3><a href="#">Raw In-Shell Peanuts</a></h3>
+							<p>Whole peanuts in shell</p>
+							<p class="price"><span> ₹3,000 / 50 kg</span></p>
+							<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary"
+									onclick="showConfirmation(event)">Order</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="menu-entry">
+						<a href="#" class="img"
+							style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZBUn06Ng4Tld1t-5cGLtHTSCVI3v29J0c12sjSGZZXuPcr7fK1ghAVsZHjrfb2LydcWg&usqp=CAU);"></a>
+						<div class="text text-center pt-4">
+							<h3><a href="#">Roasted In-Shell Peanuts</a></h3>
+							<p>Whole peanuts in shell</p>
+							<p class="price"><span>3,000 / 50 kg</span></p>
+							<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary"
+									onclick="showConfirmation(event)">Order</a></p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-3">
-				<div class="menu-entry">
-					<a href="#" class="img"
-						style="background-image: url(https://static.vecteezy.com/system/resources/previews/004/156/176/non_2x/peanuts-on-white-background-photo.jpg);"></a>
-					<div class="text text-center pt-4">
-						<h3><a href="#">White Peanuts</a></h3>
-						<p>Blanched or skinned peanuts</p>
-						<p class="price"><span> ₹3,500 / 50 kg</span></p>
-						<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary"
-								onclick="showConfirmation(event)">Order</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="menu-entry">
-					<a href="#" class="img"
-						style="background-image: url(https://previews.123rf.com/images/eak/eak1210/eak121000022/15881177-peanut-on-white-background.jpg);"></a>
-					<div class="text text-center pt-4">
-						<h3><a href="#">Red Skin Peanuts</a></h3>
-						<p>Regular raw peanuts with skin</p>
-						<p class="price"><span>	₹5,000 / 50 kg</span></p>
-						<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary"
-								onclick="showConfirmation(event)">Order</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="menu-entry">
-					<a href="#" class="img"
-						style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpkvKwxaUsgMCSw5marxGQLbfj1weVcxD9IA&s);"></a>
-					<div class="text text-center pt-4">
-						<h3><a href="#">Raw In-Shell Peanuts</a></h3>
-						<p>Whole peanuts in shell</p>
-						<p class="price"><span> ₹3,000 / 50 kg</span></p>
-						<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary"
-								onclick="showConfirmation(event)">Order</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="menu-entry">
-					<a href="#" class="img"
-						style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZBUn06Ng4Tld1t-5cGLtHTSCVI3v29J0c12sjSGZZXuPcr7fK1ghAVsZHjrfb2LydcWg&usqp=CAU);"></a>
-					<div class="text text-center pt-4">
-						<h3><a href="#">Roasted In-Shell Peanuts</a></h3>
-						<p>Whole peanuts in shell</p>
-						<p class="price"><span>3,000 / 50 kg</span></p>
-						<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary"
-								onclick="showConfirmation(event)">Order</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+	</section>
 
 
-<!-- menu -->
-<section class="ftco-menu" id="productss">
+	<!-- menu -->
+	<section class="ftco-menu" id="productss">
 		<div class="container">
 			<div class="row justify-content-center mb-5">
 				<div class="col-md-7 heading-section text-center ftco-animate">
@@ -298,10 +329,11 @@
 													<h3><a href="#">Peanuts</a></h3>
 													<p>More Superior Raw Peanuts, 500g Pouch</p>
 													<p class="price"><span> <br> ₹ 5,900 / 50 kg</span></p>
-													<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary">Order
+													<p><a href="https://wa.me/918788209773"
+															class="btn btn-primary btn-outline-primary">Order
 														</a></p>
 
-															</div>
+												</div>
 											</div>
 										</div>
 										<div class="col-md-4 text-center">
@@ -313,7 +345,8 @@
 													<p>Organic Tattva, Organic Raw Unpolished Peanuts/Groundnuts, 500
 														gram</p>
 													<p class="price"><span> ₹ 5,500 / 50 kg</span></p>
-														<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary">Order
+													<p><a href="https://wa.me/918788209773"
+															class="btn btn-primary btn-outline-primary">Order
 														</a></p>
 												</div>
 											</div>
@@ -324,10 +357,10 @@
 													style="background-image: url(https://vbwholefoods.co.uk/cdn/shop/files/raw-peanuts.jpg?v=1731781412);"></a>
 												<div class="text">
 													<h3><a href="#"> Red Peanuts</a></h3>
-													<p>Desire Raw Peanuts | 1Kg | Premium Moongfali | Vaccum Packed |
-														Jumbo Size | Healthy Snacks </p>
+													<p>Desire Raw Peanuts | 1Kg | Premium Moongfali | Vaccum Packed </p>
 													<p class="price"><span> ₹5,300</span></p>
-														<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary">Order
+													<p><a href="https://wa.me/918788209773"
+															class="btn btn-primary btn-outline-primary">Order
 														</a></p>
 												</div>
 											</div>
@@ -342,7 +375,8 @@
 													<h3><a href="#">Peanuts</a></h3>
 													<p> White Peanuts More Superior Raw Peanuts, 500g Pouch</p>
 													<p class="price"><span>₹3,000 / 50 kg</span></p>
-														<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary">Order
+													<p><a href="https://wa.me/918788209773"
+															class="btn btn-primary btn-outline-primary">Order
 														</a></p>
 												</div>
 											</div>
@@ -356,7 +390,8 @@
 													<p>Organic Tattva, Organic Raw Unpolished Peanuts/Groundnuts, 500
 														gram</p>
 													<p class="price"><span> ₹3,500 kg / 50 kg</span></p>
-														<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary">Order
+													<p><a href="https://wa.me/918788209773"
+															class="btn btn-primary btn-outline-primary">Order
 														</a></p>
 												</div>
 											</div>
@@ -370,7 +405,8 @@
 													<p>Desire Raw Peanuts | 1Kg | Premium Moongfali | Vaccum Packed |
 														Jumbo Size | Healthy Snacks </p>
 													<p class="price"><span>₹4,500 / 50 kg</span></p>
-														<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary">Order
+													<p><a href="https://wa.me/918788209773"
+															class="btn btn-primary btn-outline-primary">Order
 														</a></p>
 												</div>
 											</div>
@@ -390,7 +426,8 @@
 													<p>Organic Tattva, Organic Raw Unpolished Peanuts/Groundnuts, 500
 														gram</p>
 													<p class="price"><span> ₹3,300 / 50 kg </span></p>
-														<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary">Order
+													<p><a href="https://wa.me/918788209773"
+															class="btn btn-primary btn-outline-primary">Order
 														</a></p>
 												</div>
 											</div>
@@ -404,7 +441,8 @@
 													<p>Groundnuts(Raw)| 500gms |A1 grade| 100% Natural Moongfali/Peanuts
 													</p>
 													<p class="price"><span> ₹4,500 / 50 kg</span></p>
-													<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary">Order
+													<p><a href="https://wa.me/918788209773"
+															class="btn btn-primary btn-outline-primary">Order
 														</a></p>
 												</div>
 											</div>
@@ -417,9 +455,10 @@
 													<h3><a href="#">Soda Drinks</a></h3>
 													<p> Native Variety Groundnuts(Raw)| 500gms |A1 grade| 100% Natural
 													</p>
-													<p class="price"><span> ₹ 3,100  / 50 kg 
-													</span></p>
-														<p><a href="https://wa.me/918788209773" class="btn btn-primary btn-outline-primary">Order
+													<p class="price"><span> ₹ 3,100 / 50 kg
+														</span></p>
+													<p><a href="https://wa.me/918788209773"
+															class="btn btn-primary btn-outline-primary">Order
 														</a></p>
 												</div>
 											</div>
@@ -427,7 +466,7 @@
 									</div>
 								</div>
 
-								
+
 							</div>
 						</div>
 					</div>
@@ -437,7 +476,7 @@
 	</section>
 
 
-<!-- peanuts  -->
+	<!-- peanuts  -->
 	<section class="ftco-section" id="menu">
 		<div class="container">
 			<div class="row align-items-center">
@@ -445,8 +484,10 @@
 					<div class="heading-section text-md-right ftco-animate">
 						<span class="subheading">Discover</span>
 						<h2 class="mb-4">Our Menu</h2>
-						<p class="mb-4">At our company, we pride ourselves on offering the highest quality peanuts and nut-based products. Our journey began with a passion for creating nutritious, delicious, and wholesome snacks, and we continue to uphold these values in everything we do.</p>
-						
+						<p class="mb-4">At our company, we pride ourselves on offering the highest quality peanuts and
+							nut-based products. Our journey began with a passion for creating nutritious, delicious, and
+							wholesome snacks, and we continue to uphold these values in everything we do.</p>
+
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -480,7 +521,7 @@
 			</div>
 		</div>
 	</section>
-<!-- about us -->
+	<!-- about us -->
 
 	<section class="ftco-about d-md-flex" id="more">
 		<div class="one-half img"
@@ -493,12 +534,15 @@
 					<h2 class="mb-4">🥜 About Our Peanuts</h2>
 				</div>
 				<div>
-					<p style="color: white;">Welcome to Satynam Traders – your trusted source for high-quality peanuts, peanut oil, and peanut flour. We are committed to providing fresh, natural, and sustainable products, directly from local farms to your doorstep.
+					<p style="color: white;">Welcome to Satynam Traders – your trusted source for high-quality peanuts,
+						peanut oil, and peanut flour. We are committed to providing fresh, natural, and sustainable
+						products, directly from local farms to your doorstep.
 
-From our humble beginnings as a family-run venture, we’ve grown into a respected name in the industry, upholding values of trust, quality, and care.Fresh & Natural Products
-✅ Direct from Local Farms
-✅ Cold-Pressed Peanut Oil
-✅ Eco-Friendly Practices</p>
+						From our humble beginnings as a family-run venture, we’ve grown into a respected name in the
+						industry, upholding values of trust, quality, and care.Fresh & Natural Products
+						✅ Direct from Local Farms
+						✅ Cold-Pressed Peanut Oil
+						✅ Eco-Friendly Practices</p>
 					<p style="color: rgb(255, 255, 255);">
 						<li data-translate="fresh"> Premium Quality Peanuts</li>
 						<li data-translate="fresh">Farm-Fresh and Nutritious</li>
@@ -508,7 +552,7 @@ From our humble beginnings as a family-run venture, we’ve grown into a respect
 			</div>
 		</div>
 	</section>
-<!-- peremium -->
+	<!-- peremium -->
 	<section class="ftco-section ftco-services">
 		<div class="container">
 			<div class="row">
@@ -558,7 +602,7 @@ From our humble beginnings as a family-run venture, we’ve grown into a respect
 
 
 
-<!-- blog -->
+	<!-- blog -->
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-3">
@@ -637,75 +681,86 @@ From our humble beginnings as a family-run venture, we’ve grown into a respect
 			</div>
 		</div>
 	</section>
- <br>
- 
- 
- 
-<!-- Gallery Section Fixed -->
-<section class="ftco-section" id="gallery">
-  <div class="container">
-    <div class="row justify-content-center mb-5 pb-3">
-      <div class="col-md-7 text-center heading-section ftco-animate">
-        <h2 class="mb-4">Our Store Gallery</h2>
-        <p>A glimpse of our premium peanut products and facilities.</p>
-      </div>
-    </div>
 
-    <!-- Image Row 1 -->
-    <div class="row">
-      <div class="col-md-3 col-sm-6 ftco-animate">
-        <a href="https://www.thespruceeats.com/thmb/ROY5uTtTUDHM6hCDTfshDNyQlcg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/oven-roasted-peanuts-4172872-step-01-7548c7aae0e849a8b5a368d985caba2d.jpg" class="image-popup">
-          <img src="https://www.thespruceeats.com/thmb/ROY5uTtTUDHM6hCDTfshDNyQlcg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/oven-roasted-peanuts-4172872-step-01-7548c7aae0e849a8b5a368d985caba2d.jpg" alt="Groundnut" class="gallery-img mb-4">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6 ftco-animate">
-        <a href="https://www.healthyorganic.in/cdn/shop/products/40094998-2_1-bb-royal-organic-raw-peanuts_2048x.jpg?v=1569850730" class="image-popup">
-          <img src="https://www.healthyorganic.in/cdn/shop/products/40094998-2_1-bb-royal-organic-raw-peanuts_2048x.jpg?v=1569850730" alt="Processing Plant" class="gallery-img mb-4">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6 ftco-animate">
-        <a href="https://vatsanfoods.com/adminln/uploads/product-images/1655962451_GroundNut_-_Raw_2.jpg" class="image-popup">
-          <img src="https://vatsanfoods.com/adminln/uploads/product-images/1655962451_GroundNut_-_Raw_2.jpg" alt="Shelling Machine" class="gallery-img mb-4">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6 ftco-animate">
-        <a href="https://www.vadiner.com/images/uploads/peanuts-in-bag.jpg" class="image-popup">
-          <img src="https://www.vadiner.com/images/uploads/peanuts-in-bag.jpg" alt="Roasted Groundnuts" class="gallery-img mb-4">
-        </a>
-      </div>
-    </div>
 
-    <!-- Image Row 2 -->
-    <div class="row">
-      <div class="col-md-3 col-sm-6 ftco-animate">
-        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcMaul9_xkpPDJjctxv_5_ZzvN6Q9qahiTA&s" class="image-popup">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcMaul9_xkpPDJjctxv_5_ZzvN6Q9qahiTA&s" alt="Groundnut" class="gallery-img mb-4">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6 ftco-animate">
-        <a href="https://5.imimg.com/data5/SELLER/Default/2023/2/MI/XV/LA/125151604/raw-peanut-500x500.jpg" class="image-popup">
-          <img src="https://5.imimg.com/data5/SELLER/Default/2023/2/MI/XV/LA/125151604/raw-peanut-500x500.jpg" alt="Processing Plant" class="gallery-img mb-4">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6 ftco-animate">
-        <a href="https://images.timesnownews.com/thumb/msid-95253806,thumbsize-40916,width-400,height-225,resizemode-75/95253806.jpg" class="image-popup">
-          <img src="https://images.timesnownews.com/thumb/msid-95253806,thumbsize-40916,width-400,height-225,resizemode-75/95253806.jpg" alt="Shelling Machine" class="gallery-img mb-4">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6 ftco-animate">
-        <a href="https://www.jiomart.com/images/product/original/490198099/loose-raw-peanuts-1-kg-product-images-o490198099-p490198099-0-202503281246.jpg?im=Resize=(420,420)" class="image-popup">
-          <img src="https://www.jiomart.com/images/product/original/490198099/loose-raw-peanuts-1-kg-product-images-o490198099-p490198099-0-202503281246.jpg?im=Resize=(420,420)" alt="Roasted Groundnuts" class="gallery-img mb-4">
-        </a>
-      </div>
-    </div>
+	<!-- Gallery Section Fixed -->
+	<section class="ftco-section" id="gallery">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="mb-4">Our Store Gallery</h2>
+					<p>A glimpse of our premium peanut products and facilities.</p>
+				</div>
+			</div>
 
-  </div>
-</section>
+			<!-- Image Row 1 -->
+			<div class="row">
+				<div class="col-md-3 col-sm-6 ftco-animate">
+					<a href="https://www.thespruceeats.com/thmb/ROY5uTtTUDHM6hCDTfshDNyQlcg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/oven-roasted-peanuts-4172872-step-01-7548c7aae0e849a8b5a368d985caba2d.jpg"
+						class="image-popup">
+						<img src="https://www.thespruceeats.com/thmb/ROY5uTtTUDHM6hCDTfshDNyQlcg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/oven-roasted-peanuts-4172872-step-01-7548c7aae0e849a8b5a368d985caba2d.jpg"
+							alt="Groundnut" class="gallery-img mb-4">
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 ftco-animate">
+					<a href="https://www.healthyorganic.in/cdn/shop/products/40094998-2_1-bb-royal-organic-raw-peanuts_2048x.jpg?v=1569850730"
+						class="image-popup">
+						<img src="https://www.healthyorganic.in/cdn/shop/products/40094998-2_1-bb-royal-organic-raw-peanuts_2048x.jpg?v=1569850730"
+							alt="Processing Plant" class="gallery-img mb-4">
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 ftco-animate">
+					<a href="https://vatsanfoods.com/adminln/uploads/product-images/1655962451_GroundNut_-_Raw_2.jpg"
+						class="image-popup">
+						<img src="https://vatsanfoods.com/adminln/uploads/product-images/1655962451_GroundNut_-_Raw_2.jpg"
+							alt="Shelling Machine" class="gallery-img mb-4">
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 ftco-animate">
+					<a href="https://www.vadiner.com/images/uploads/peanuts-in-bag.jpg" class="image-popup">
+						<img src="https://www.vadiner.com/images/uploads/peanuts-in-bag.jpg" alt="Roasted Groundnuts"
+							class="gallery-img mb-4">
+					</a>
+				</div>
+			</div>
 
- 
- <br>	<!--custom saying  -->
+			<!-- Image Row 2 -->
+			<div class="row">
+				<div class="col-md-3 col-sm-6 ftco-animate">
+					<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcMaul9_xkpPDJjctxv_5_ZzvN6Q9qahiTA&s"
+						class="image-popup">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcMaul9_xkpPDJjctxv_5_ZzvN6Q9qahiTA&s"
+							alt="Groundnut" class="gallery-img mb-4">
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 ftco-animate">
+					<a href="https://5.imimg.com/data5/SELLER/Default/2023/2/MI/XV/LA/125151604/raw-peanut-500x500.jpg"
+						class="image-popup">
+						<img src="https://5.imimg.com/data5/SELLER/Default/2023/2/MI/XV/LA/125151604/raw-peanut-500x500.jpg"
+							alt="Processing Plant" class="gallery-img mb-4">
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 ftco-animate">
+					<a href="https://images.timesnownews.com/thumb/msid-95253806,thumbsize-40916,width-400,height-225,resizemode-75/95253806.jpg"
+						class="image-popup">
+						<img src="https://images.timesnownews.com/thumb/msid-95253806,thumbsize-40916,width-400,height-225,resizemode-75/95253806.jpg"
+							alt="Shelling Machine" class="gallery-img mb-4">
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-6 ftco-animate">
+					<a href="https://www.jiomart.com/images/product/original/490198099/loose-raw-peanuts-1-kg-product-images-o490198099-p490198099-0-202503281246.jpg?im=Resize=(420,420)"
+						class="image-popup">
+						<img src="https://www.jiomart.com/images/product/original/490198099/loose-raw-peanuts-1-kg-product-images-o490198099-p490198099-0-202503281246.jpg?im=Resize=(420,420)"
+							alt="Roasted Groundnuts" class="gallery-img mb-4">
+					</a>
+				</div>
+			</div>
 
-	<section class="ftco-section img" id="ftco-testimony" style="background-image: url(https://images.onlymyhealth.com/imported/images/2024/April/30_Apr_2024/mn-peanut.jpg);"
+		</div>
+	</section>
+
+	<section class="ftco-section img" id="ftco-testimony"
+		style="background-image: url(https://images.onlymyhealth.com/imported/images/2024/April/30_Apr_2024/mn-peanut.jpg);"
 		data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
@@ -727,7 +782,8 @@ From our humble beginnings as a family-run venture, we’ve grown into a respect
 						</blockquote>
 						<div class="author d-flex mt-4">
 							<div class="image mr-3 align-self-center">
-								<img src="images/person_1.jpg" alt="">
+								<img src="https://gimgs2.nohat.cc/thumb/f/640/flat-person-icon-download-dummy-man--m2i8d3i8N4d3N4K9.jpg"
+									alt="">
 							</div>
 							<div class="name align-self-center">Aryan Mahant <span class="position">Illustrator
 									Designer</span></div>
@@ -741,7 +797,8 @@ From our humble beginnings as a family-run venture, we’ve grown into a respect
 						</blockquote>
 						<div class="author d-flex mt-4">
 							<div class="image mr-3 align-self-center">
-								<img src="images/person_2.jpg" alt="">
+								<img src="https://gimgs2.nohat.cc/thumb/f/640/flat-person-icon-download-dummy-man--m2i8d3i8N4d3N4K9.jpg"
+									alt="">
 							</div>
 							<div class="name align-self-center">Om <span class="position">
 								</span>Trainer</div>
@@ -756,7 +813,8 @@ From our humble beginnings as a family-run venture, we’ve grown into a respect
 						</blockquote>
 						<div class="author d-flex mt-4">
 							<div class="image mr-3 align-self-center">
-								<img src="images/person_3.jpg" alt="">
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVKs7OaXDrVLCqiUVeKxwWQbgjphBvIt3qYQ&s"
+									alt="">
 							</div>
 							<div class="name align-self-center">Anvi<span class="position">
 									Designer</span></div>
@@ -770,7 +828,8 @@ From our humble beginnings as a family-run venture, we’ve grown into a respect
 						</blockquote>
 						<div class="author d-flex mt-4">
 							<div class="image mr-3 align-self-center">
-								<img src="images/person_2.jpg" alt="">
+								<img src="https://gimgs2.nohat.cc/thumb/f/640/flat-person-icon-download-dummy-man--m2i8d3i8N4d3N4K9.jpg"
+									alt="">
 							</div>
 							<div class="name align-self-center">Aman <span class="position">
 									Designer</span></div>
@@ -784,108 +843,138 @@ From our humble beginnings as a family-run venture, we’ve grown into a respect
 								&rdquo;</p>
 						</blockquote>
 						<div class="author d-flex mt-4">
+
 							<div class="image mr-3 align-self-center">
-								<img src="images/person_3.jpg" alt="">
+
+								<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVKs7OaXDrVLCqiUVeKxwWQbgjphBvIt3qYQ&s"
+									alt="">
 							</div>
 							<div class="name align-self-center">Aditi
 								<span class="position"></span>Developer
 							</div>
+
+
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
- <br>
+	<br>
 
-<br>
-
-
-<!-- Shop Timing Section -->
-<section class="ftco-about d-md-flex" id="more" style="background: #121212; color: #eee; padding: 60px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-  <div class="one-half img" 
-       style="background-image: url('https://gramiyum.in/wp-content/uploads/2022/09/raw-peanuts.jpg'); background-size: cover; background-position: center; min-height: 350px; border-radius: 12px 0 0 12px; box-shadow: inset 0 0 20px rgba(0,0,0,0.4);">
-  </div>
-  
-  <div class="one-half ftco-animate" style="background: #1e1e1e; border-radius: 0 12px 12px 0; padding: 40px 30px; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 0 15px rgba(0,0,0,0.6);">
-    <div class="overlap">
-      <div class="heading-section ftco-animate">
-        <h4 class="mt-0" style="color: #ffd966; font-weight: 700; font-size: 1.8rem; letter-spacing: 1px;">Shop Timing</h4>
-        
-        <ul style="list-style: none; padding-left: 0; font-size: 1.15rem; line-height: 1.7; color: #ccc; margin-top: 15px;">
-          <li><strong style="color: #fff;">Monday to Saturday:</strong> 9:00 AM to 9:00 PM</li>
-          <li><strong style="color: #fff;">Sunday:</strong> Closed</li>
-        </ul>
-        
-        <p class="mt-4" style="font-size: 1.15rem;">
-          Call us: 
-          <a href="tel:+918788209773" style="color: #0dcaf0; text-decoration: none; font-weight: 600;">
-           +91 8788209773
-          </a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+	<br>
 
 
+	<!-- Shop Timing Section -->
+	<section class="ftco-about d-md-flex" id="more"
+		style="background: #121212; color: #eee; padding: 60px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+		<div class="one-half img"
+			style="background-image: url('https://gramiyum.in/wp-content/uploads/2022/09/raw-peanuts.jpg'); background-size: cover; background-position: center; min-height: 350px; border-radius: 12px 0 0 12px; box-shadow: inset 0 0 20px rgba(0,0,0,0.4);">
+		</div>
 
-<!-- Contact Me Section - Dark Theme -->
-<section style="background-image: url(./images/bg_4.jpg); padding: 50px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #eee;">
-  <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
-    
-    <h2 style="font-size: 3.5rem; font-weight: 888px; margin-bottom: 10px; color: #ffffff;">Contact Me</h2>
-    <p style="color: #bbb; font-size: 1.1rem; margin-bottom: 40px;">Get in touch with me anytime.</p>
-    
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 40px;">
-      
-      <div style="background: #1f1f1f; box-shadow: 0 2px 10px rgb(0 0 0 / 0.7); border-radius: 12px; padding: 25px 20px; flex: 1 1 220px; max-width: 260px; text-align: center;">
-        <img src="https://img.icons8.com/ios-filled/50/1db954/phone.png" alt="Phone" style="margin-bottom: 15px;">
-        <h3 style="margin-bottom: 8px; color: #1db954;">Call Us On</h3>
-        <a href="tel:+918788209773" style="text-decoration: none; color: #eee; font-weight: 600; font-size: 1.1rem;">+91 87882 09773</a>
-      </div>
-      
-      <div style="background: #1f1f1f; box-shadow: 0 2px 10px rgb(0 0 0 / 0.7); border-radius: 12px; padding: 25px 20px; flex: 1 1 220px; max-width: 260px; text-align: center;">
-        <img src="https://img.icons8.com/ios-filled/50/1db954/email.png" alt="Email" style="margin-bottom: 15px;">
-        <h3 style="margin-bottom: 8px; color: #1db954;">Email Id</h3>
-        <a href="mailto:satynaamtrader@gmail.com" style="text-decoration: none; color: #eee; font-weight: 600; font-size: 0.9rem;">satynaamtrader@gmail.com</a>
-      </div>
-      
-      <div style="background: #1f1f1f; box-shadow: 0 2px 10px rgb(0 0 0 / 0.7); border-radius: 12px; padding: 25px 20px; flex: 1 1 220px; max-width: 260px; text-align: center;">
-        <img src="https://img.icons8.com/ios-filled/50/1db954/marker.png" alt="Location" style="margin-bottom: 15px;">
-        <h3 style="margin-bottom: 8px; color: #1db954;">Find Us</h3>
-        <a href="https://www.google.com/maps/place/Satynaam+traders+industry/@21.3436875,78.4775625,17z/data=!3m1!4b1!4m6!3m5!1s0x3bd451005f264f85:0xc37c8b5513169c7e!8m2!3d21.3436875!4d78.4775625!16s%2Fg%2F11lf77hz7s?hl=en&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" style="color: #ccc; font-size: 1.1rem; margin: 0;"> Rohana, katol , India, 441305</a>
-      </div>
-      
-    </div>
-    
-    <!-- Google Map Embed -->
-    <div style="width: 100%; height: 350px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgb(0 0 0 / 0.7); border: 2px solid #1db954;">
-      <iframe
-        src=" https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3929.0782827672338!2d78.4745935!3d21.3436876!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd451005f264f85%3A0xc37c8b5513169c7e!2sSatynaam%20traders%20industry!5e1!3m2!1sen!2sin!4v1751556961761!5m2!1sen!2sin "
-        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
+		<div class="one-half ftco-animate"
+			style="background: #1e1e1e; border-radius: 0 12px 12px 0; padding: 40px 30px; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 0 15px rgba(0,0,0,0.6);">
+			<div class="overlap">
+				<div class="heading-section ftco-animate">
+					<h4 class="mt-0" style="color: #ffd966; font-weight: 700; font-size: 1.8rem; letter-spacing: 1px;">
+						Shop Timing</h4>
+
+					<ul
+						style="list-style: none; padding-left: 0; font-size: 1.15rem; line-height: 1.7; color: #ccc; margin-top: 15px;">
+						<li><strong style="color: #fff;">Monday to Saturday:</strong> 9:00 AM to 9:00 PM</li>
+						<li><strong style="color: #fff;">Sunday:</strong> Closed</li>
+					</ul>
+
+					<p class="mt-4" style="font-size: 1.15rem;">
+						Call us:
+						<a href="tel:+918788209773" style="color: #0dcaf0; text-decoration: none; font-weight: 600;">
+							+91 8788209773
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
-  </section>
-<br><br>
+
+	<!-- Contact Me Section - Dark Theme -->
+	<section
+		style="background-image: url(./images/bg_4.jpg); padding: 50px 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #eee;">
+		<div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+
+			<h2 style="font-size: 3.5rem; font-weight: 888px; margin-bottom: 10px; color: #ffffff;">Contact Me</h2>
+			<p style="color: #bbb; font-size: 1.1rem; margin-bottom: 40px;">Get in touch with me anytime.</p>
+
+			<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 40px;">
+
+				<div
+					style="background: #1f1f1f; box-shadow: 0 2px 10px rgb(0 0 0 / 0.7); border-radius: 12px; padding: 25px 20px; flex: 1 1 220px; max-width: 260px; text-align: center;">
+					<!-- <img src="https://img.icons8.com/ios-filled/50/1db954/phone.png" alt="Phone"
+						style="margin-bottom: 15px;"> -->
+						<img src="https://cdn-icons-png.flaticon.com/512/9073/9073336.png" alt="Email"
+						style="margin-bottom: 15px; width:auto;height:80px;border-radius:50%;">
+					<h3 style="margin-bottom: 8px; color: #b7b04c;font-family: 'Playfair Display', serif">Call Us On</h3>
+					<a href="tel:+918788209773"
+						style="text-decoration: none; color: #ecece5; font-weight: 600; font-size: 1.1rem;">+91 87882
+						09773</a>
+				</div>
+
+				<div
+					style="background: #1f1f1f; box-shadow: 0 2px 10px rgb(0 0 0 / 0.7); border-radius: 12px; padding: 25px 20px; flex: 1 1 220px; max-width: 260px; text-align: center;">
+					<!-- <img src="https://img.icons8.com/ios-filled/50/1db954/email.png" alt="Email"
+						style="margin-bottom: 15px;"> -->
+											<img src="https://cdn-icons-png.freepik.com/256/10505/10505715.png?semt=ais_hybrid" alt="Email"
+						style="margin-bottom: 15px; width:auto;height:80px;">
+					<h3 style="margin-bottom: 8px; color: #b7b04c;font-family: 'Playfair Display', serif">Email Id</h3>
+					<a href="mailto:satynaamtrader@gmail.com"
+						style="text-decoration: none; color: #eee; font-weight: 600; font-size: 0.9rem;">satynaamtrader@gmail.com</a>
+				</div>
+
+				<div
+					style="background: #1f1f1f; box-shadow: 0 2px 10px rgb(0 0 0 / 0.7); border-radius: 12px; padding: 25px 20px; flex: 1 1 220px; max-width: 260px; text-align: center;">
+					<!-- <img src="https://img.icons8.com/ios-filled/50/1db954/marker.png" alt="Location"
+						style="margin-bottom: 15px;"> -->
+						<img src="https://cdn-icons-png.freepik.com/256/14034/14034539.png?semt=ais_hybrid" alt="Email"
+						style="margin-bottom: 15px; width:auto;height:80px;border-radius:50%;">
+					<h3 style="margin-bottom: 8px; color: #b7b04c;font-family: 'Playfair Display', serif">Find Us</h3>
+					<a href="https://www.google.com/maps/place/Satynaam+traders+industry/@21.3436875,78.4775625,17z/data=!3m1!4b1!4m6!3m5!1s0x3bd451005f264f85:0xc37c8b5513169c7e!8m2!3d21.3436875!4d78.4775625!16s%2Fg%2F11lf77hz7s?hl=en&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
+						style="color: #ccc; font-size: 1.1rem; margin: 0;"><b>Rohana, katol , India, 441305</b> </a>
+				</div>
+
+			</div>
+
+			<!-- Google Map Embed -->
+			<div
+				style="width: 100%; height: 350px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgb(0 0 0 / 0.7); border: 2px solid #011b0a;">
+				<iframe
+					src=" https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3929.0782827672338!2d78.4745935!3d21.3436876!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd451005f264f85%3A0xc37c8b5513169c7e!2sSatynaam%20traders%20industry!5e1!3m2!1sen!2sin!4v1751556961761!5m2!1sen!2sin "
+					width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+
+
+	</section>
+	<br>
+	<br>
+	<div class = "footer-line"></div>
 	<footer class="ftco-footer ftco-section img">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row mb-5">
 				<div class="col-lg-3 col-md-6 mb-5 mb-md-5">
 					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">About Us</h2>
+						<h2 class="ftco-heading-2" style="font-family: 'Satisfy',cursive">About Us</h2>
 						<p>At our company, we pride ourselves on offering the highest quality peanuts
 							and nut-based
 							products.</p>
-						
+
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 mb-5 mb-md-5">
 					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">gallery</h2>
+						<h2 class="ftco-heading-2"style="font-family:'Satisfy',cursive">gallery</h2>
 						<div class="block-21 mb-4 d-flex">
 							<a class="blog-img mr-4"
 								style="background-image: url(https://5.imimg.com/data5/SELLER/Default/2024/12/475679029/SL/RX/UT/184424817/roasted-peanut-500x500.jpg);"></a>
@@ -908,7 +997,7 @@ From our humble beginnings as a family-run venture, we’ve grown into a respect
 				</div>
 				<div class="col-lg-2 col-md-6 mb-5 mb-md-5">
 					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">Services</h2>
+						<h2 class="ftco-heading-2"style="font-family:'Satisfy',cursive">Services</h2>
 						<ul class="list-unstyled">
 							<li><a href="./menu.html" class="py-2 d-block">peanut</a></li>
 							<li><a href="./menu.html" class="py-2 d-block">GroundNuts</a></li>
@@ -919,34 +1008,35 @@ From our humble beginnings as a family-run venture, we’ve grown into a respect
 				</div>
 				<div class="col-lg-3 col-md-6 mb-5 mb-md-5">
 					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<h2 class="ftco-heading-2"style="font-family:'Satisfy', cursive">Have a Questions?</h2>
 						<div class="block-23 mb-3">
 							<ul>
-  <li>
-    <a href="https://www.google.com/maps/place/Satynaam+traders+industry/@21.3436875,78.4775625,17z/data=!3m1!4b1!4m6!3m5!1s0x3bd451005f264f85:0xc37c8b5513169c7e!8m2!3d21.3436875!4d78.4775625!16s%2Fg%2F11lf77hz7s?hl=en&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
-      <span class="icon icon-map-marker"></span>
-      <span class="text"> Rohana near bus stand,  441305</span>
-    </a>
-  </li>
-  <li>
-    <a href="tel:+918788209773">
-      <span class="icon icon-phone"></span>
-      <span class="text">+91 87882 09773</span>
-    </a>
-  </li>
-  <li>
-    <a href="mailto:satynaamtrader@gmail.com">
-      <span class="icon icon-envelope"></span>
-      <span class="text">satynaamtrader@gmail.com</span>
-    </a>
-  </li>
-</ul>
+								<li>
+									<a href="https://www.google.com/maps/place/Satynaam+traders+industry/@21.3436875,78.4775625,17z/data=!3m1!4b1!4m6!3m5!1s0x3bd451005f264f85:0xc37c8b5513169c7e!8m2!3d21.3436875!4d78.4775625!16s%2Fg%2F11lf77hz7s?hl=en&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
+										target="_blank" rel="noopener noreferrer">
+										<span class="icon icon-map-marker"></span>
+										<span class="text"> Rohana near bus stand, 441305</span>
+									</a>
+								</li>
+								<li>
+									<a href="tel:+918788209773">
+										<span class="icon icon-phone"></span>
+										<span class="text">+91 87882 09773</span>
+									</a>
+								</li>
+								<li>
+									<a href="mailto:satynaamtrader@gmail.com">
+										<span class="icon icon-envelope"></span>
+										<span class="text">satynaamtrader@gmail.com</span>
+									</a>
+								</li>
+							</ul>
 
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-md-12 text-center">
 
 					<p>
@@ -955,10 +1045,14 @@ From our humble beginnings as a family-run venture, we’ve grown into a respect
 						Traders And Industries
 
 
-					</p>
-				</div>
+					</p> -->
+			<div class="footer-bottom">
+				&copy; 2025 All rights reserved | By Satynaam Traders And Industries
 			</div>
+
 		</div>
+		<!-- </div>
+		</div> -->
 	</footer>
 
 
